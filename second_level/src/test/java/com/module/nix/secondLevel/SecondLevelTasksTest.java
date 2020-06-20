@@ -5,5 +5,8 @@ import org.junit.jupiter.api.Test;
 
 class SecondLevelTasksTest {
 
-
+    @Test
+    void isBracketsClose() {
+        assertTrue(SecondLevelTasks.isBracketsClose("{}[]()"));
+    }
 }
