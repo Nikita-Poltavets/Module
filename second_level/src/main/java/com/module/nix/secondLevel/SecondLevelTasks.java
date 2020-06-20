@@ -2,6 +2,20 @@ package com.module.nix.secondLevel;
 
 public class SecondLevelTasks {
 
+    public TreeNode root;
+
+    public static int maxDepthOfBinaryTree(TreeNode root){
+        if (root == null){ return 0; }
+
+        int leftDepth = maxDepthOfBinaryTree(root.left);
+        int rightDepth = maxDepthOfBinaryTree(root.right);
+
+        if (leftDepth > rightDepth)
+            return (leftDepth + 1);
+        else
+            return (rightDepth + 1);
+    }
+
     public static boolean isBracketsClose(String line){
         int countBrackets = 0;
         char[] arrayLine = line.toCharArray();
@@ -19,4 +33,5 @@ public class SecondLevelTasks {
 
         return false;
     }
+
 }
