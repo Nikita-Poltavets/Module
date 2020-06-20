@@ -15,4 +15,10 @@ class FirstLevelTasksTest {
     void isPossibleToMoveHorse() {
         assertTrue(FirstLevelTasks.isPossibleToMoveHorse(2, 1, 3, 3));
     }
+
+    @Test
+    void triangleArea() {
+        assertEquals(FirstLevelTasks.triangleArea(4, 4, 4), 6.928203230275509);
+    }
+
 }
