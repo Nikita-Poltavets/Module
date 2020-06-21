@@ -7,7 +7,7 @@ class FirstLevelTasksTest {
 
     @Test
     void returnAmountOfUniqueSymbol() {
-        int[] array = {1, 4, 5, 1, 1, 1, 3};
+        int[] array = {1, 4, 5, 1, 1, 1, 3, 1};
         assertEquals(FirstLevelTasks.returnAmountOfUniqueSymbol(array), 4);
     }
 
